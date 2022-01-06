@@ -54,3 +54,20 @@
         margin-left: 0;
     }
 }
+
+// SPINNER ICON
+@keyframes spin-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate {
+    animation: spin-icon 1.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
