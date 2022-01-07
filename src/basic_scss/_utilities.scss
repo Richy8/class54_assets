@@ -248,6 +248,52 @@ $weights: 400,
   }
 }
 
+// BOX SIZES
+.box-10 {
+  @include square-shape(10);
+}
+
+.box-12 {
+  @include square-shape(12);
+}
+
+.box-14 {
+  @include square-shape(14);
+}
+
+.box-16 {
+  @include square-shape(16);
+}
+
+.box-18 {
+  @include square-shape(18);
+}
+
+.box-20 {
+  @include square-shape(20);
+}
+
+.box-22 {
+  @include square-shape(22);
+}
+
+.box-24 {
+  @include square-shape(24);
+}
+
+.box-26 {
+  @include square-shape(26);
+}
+
+.box-28 {
+  @include square-shape(28);
+}
+
+.box-30 {
+  @include square-shape(30);
+}
+
+
 // TRANSFORMATION
 .rotate-180 {
   transform: rotate(180deg);
