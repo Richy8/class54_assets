@@ -55,6 +55,17 @@
     }
 }
 
+// ZOOM OUT 
+@keyframes zoom-out {
+    0% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 // SPINNER ICON
 @keyframes spin-icon {
     0% {
