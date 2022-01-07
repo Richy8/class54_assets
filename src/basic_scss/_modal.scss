@@ -9,7 +9,7 @@
   box-sizing: border-box;
   overflow: auto;
   z-index: 3000;
-  @include transition(0.55s);
+  // @include transition(0.55s);
   animation: zoom-out 0.7s ease-in-out forwards;
 }
 
