@@ -1,6 +1,5 @@
-// CONVERT PX TO REM
 @function toRem($size) {
-    $result: $size/16;
+    $result: calc($size/16);
     @return #{$result}rem;
 }
 
@@ -73,20 +72,20 @@ FIXED FULL DISPLAY AREA
 SQUARE SHAPE BUILDER
 ======================= */
 @mixin square-shape($value) {
-    min-width: #{$value/16}rem;
-    min-height: #{$value/16}rem;
-    width: #{$value/16}rem;
-    height: #{$value/16}rem;
+    min-width:  toRem($value);
+    min-height: toRem($value);
+    width: toRem($value);
+    height: toRem($value);
 }
 
 /* ======================
 RECTANGLE SHAPE BUILDER
 ========================= */
 @mixin rectangle-shape($width, $height) {
-    min-width: #{$width/16}rem;
-    min-height: #{$height/16}rem;
-    width: #{$width/16}rem;
-    height: #{$height/16}rem;
+    min-width: toRem($width);
+    min-height: toRem($height);
+    width: toRem($width);
+    height: toRem($height);
 }
 
 /* ==============
@@ -312,13 +311,6 @@ SMOOTH TRANSITIONING
 FONT STYLING
 ===================== */
 @mixin font-height($size, $height) {
-    font-size: #{$size/16}rem;
-    line-height: #{$height/16}rem;
-}
-
-/* ==================
-BOX SHADOW
-===================== */
-@mixin box-shadow($color: $brand-black) {
-    box-shadow: 0 toRem(1) toRem(4) rgba($color, 0.15);
+    font-size:  toRem($size);
+    line-height: toRem($height);
 }
