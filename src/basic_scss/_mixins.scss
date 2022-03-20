@@ -1,5 +1,5 @@
 @function toRem($size) {
-    $result: calc($size/16);
+    $result: $size/16;
     @return #{$result}rem;
 }
 
